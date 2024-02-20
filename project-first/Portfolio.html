@@ -16,15 +16,20 @@
         
         <ul id="one">
 
-            <li><a href="#one">首頁</a></li>
+            <li onmousedown="down(this)" onmouseup="up(this)" 
+                onmouseover="over(this)" onmouseout="out(this)"><a href="#one">首頁</a></li>       <!-- href鏈接該id的標籤,點擊即可移動到該標籤的位置-->
 
-            <li><a href="#two">品牌歷史</a></li>
+            <li onmousedown="down(this)" onmouseup="up(this)" 
+                onmouseover="over(this)" onmouseout="out(this)"><a href="#two">品牌歷史</a></li>
 
-            <li><a href="#six">品牌理念</a></li>
+            <li onmousedown="down(this)" onmouseup="up(this)" 
+                onmouseover="over(this)" onmouseout="out(this)"><a href="#six">品牌理念</a></li>
             
-            <li><a href="#four">產品項目</a></li>
+            <li onmousedown="down(this)" onmouseup="up(this)" 
+                onmouseover="over(this)" onmouseout="out(this)"><a href="#four">產品項目</a></li>
 
-            <li><a href="#three">聯絡我們</a></li>
+            <li onmousedown="down(this)" onmouseup="up(this)" 
+                onmouseover="over(this)" onmouseout="out(this)"><a href="#three">聯絡我們</a></li>
         </ul>
 
 
@@ -99,7 +104,21 @@
                 <div class="text">新北市土城區延和路110號5樓 </div>
             </div>
 
- 
+            
+      <script>
+        function down(element){                     //事件處理 滑鼠按下會觸發的函式
+            element.style.backgroundColor="#E0E0E0";      //顏色變深
+        }
+        function up(element){                      //事件處理 滑鼠放開會觸發的函式
+            element.style.backgroundColor="#eceaea";      //顏色恢復
+        }
+        function over(element){                    //事件處理 滑鼠移入會觸發的函式
+            element.style.fontSize="17px";                //字體變大
+        }
+        function out(element){                     //事件處理 滑鼠移出會觸發的函式
+            element.style.fontSize="16px";                //字體恢復
+        }
+      </script>
 
 
 

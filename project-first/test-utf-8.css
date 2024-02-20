@@ -1,5 +1,5 @@
-html{
-    scroll-behavior:smooth;
+html{                  
+    scroll-behavior:smooth;/*點擊href標籤,移動的時候可以有滑動效果 */
 }
 
 
@@ -22,7 +22,7 @@ h1{
     justify-content:center ; 
     margin:0 ; 
     padding:15px ; 
-    background-color:rgb(236, 234, 234);
+    background-color:#eceaea;
 }
 
 #one li {
