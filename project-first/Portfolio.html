@@ -104,7 +104,28 @@
                 <div class="text">新北市土城區延和路110號5樓 </div>
             </div>
 
-            
+
+
+            <!-- 複製google map的地圖分享裡面的嵌入地圖的HTML程式碼,貼上在body裡面,
+    並且要讓iframe區塊置中,所以要使用css的 display:flex;justify-content:center這屬性
+    ,這屬性只能讓使用的容器裡的項目區塊置中,所以要在iframe標籤外新增一個div標籤,才能讓
+    內部的iframe標籤有置中的效果-->    
+     <div id="mapset">  
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226.0190282543775!2d121.46718311430384!3d24.98976876935409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346802be147e95bd%3A0x470de12820a4959!2zMjM25paw5YyX5biC5Zyf5Z-O5Y2A5bu25ZKM6LevMTEw6Jmf!5e0!3m2!1szh-TW!2stw!4v1708861963880!5m2!1szh-TW!2stw" 
+            width="700" 
+            height="200" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>    
+     </div>   
+
+
+
+
+
+
       <script>
         function down(element){                     //事件處理 滑鼠按下會觸發的函式
             element.style.backgroundColor="#E0E0E0";      //顏色變深
@@ -118,10 +139,24 @@
         function out(element){                     //事件處理 滑鼠移出會觸發的函式
             element.style.fontSize="16px";                //字體恢復
         }
+
+         
+       
+
+        
+
+
+        
+
+
+
+
+
       </script>
 
-
-
+      
+       
+     
 
     </body>
 
